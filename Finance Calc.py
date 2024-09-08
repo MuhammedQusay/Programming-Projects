@@ -10,9 +10,9 @@ def calculate_finances(monthly_income: float, tax_rate: float, currency: str) ->
 
     system("cls||clear")
 
-    print(f'Monthly income: {currency}{monthly_income:,.2f}')
     print(f'Tax rate: {tax_rate:,.0f}%')
-    print(f'Monthly tax: {currency}{monthly_tax:,.2f}')
+    print(f'Monthly salary: {currency}{monthly_income:,.2f}')
+    print(f'Monthly tax paid: {currency}{monthly_tax:,.2f}')
     print(f'Monthly net income: {currency}{monthly_net_income:,.2f}')
     print(f'Yearly salary: {currency}{yearly_salary:,.2f}')
     print(f'Yearly tax paid: {currency}{yearly_tax:,.2f}')
@@ -26,7 +26,7 @@ def main() -> None:
             tax_rate: float = float(input('Enter your tax rate (%): '))
             currency = input("Enter your currency: ")
 
-            if monthly_income <= 0 or tax_rate < 0:
+            if monthly_income < 0 or tax_rate < 0:
                 print("Please enter valid positive values for income and tax rate.")
             else:
                 break
@@ -38,4 +38,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    system("cls||clear")
     main()
