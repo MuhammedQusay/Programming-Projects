@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text], select, input[type=date], input[type=radio], input[type=checkbox], input[type=submit], input[type=reset] {
+            width: 170px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid grey;
+            box-sizing: border-box;
+        }
+        input[type=submit], input[type=reset] {
+            width: 550px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 15px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 20px;
+        }
+        input[type=submit]:hover {
+            background-color: #3e8f42;
+        }
+        input[type=reset]:hover {
+            background-color: #3e8f42;
+        }
+        label {
+            width: 169px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(58, 148, 71);
+        }
+    </style>
+</head>
+<body>
+    
+    <label for="fname">First Name: </label>
+    <input type="text"  id="fname" name="fname" placeholder="First" required>
+
+    <br>
+
+    <label for="lname">Last Name: </label>
+    <input type="text"  id="lname" name="lname" placeholder="Last" required>
+
+    <br>
+
+    <label for="email">Email: </label>
+    <input type="text" id="email" name="email" placeholder="hello@world.com" required>
+
+    <br>
+
+    <label for="ALO">Phone Number: </label>
+    <input type="text" id="ALO" name="ALO" placeholder="123-456-7890" maxlength="10" required>
+
+    <br>
+
+    <label for="nation">Nation: </label>
+    <select name="nation" id="nation" required style="width: 169px;"> 
+        <option value="" disabled selected>Select a Nation</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Australia">Australia</option>
+        <option value="Brazil">Brazil</option>
+        <option value="China">China</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="India">India</option>
+        <option value="Italy">Italy</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Norway">Norway</option>
+        <option value="Russia">Russia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Spain">Spain</option>
+        <option value="Sweden">Sweden</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="USA">USA</option>
+    </select>
+
+    <br>
+
+    <label for="birth">Date of Birth</label>
+    <input type="date" id="birth" name="birth" required style="width: 169px;">
+
+    <br>
+
+    <label for="education">Education Level</label>
+    <input type="radio" id="education" name="education" value="High School" required>High School
+    <input type="radio" id="education" name="education" value="College" required>Undergraduate
+    <input type="radio" id="education" name="education" value="Graduate" required>Graduate
+    <input type="radio" id="education" name="education" value="High School" required>Master
+    <input type="radio" id="education" name="education" value="High School" required>PhD
+
+
+    <br>
+
+    <label for="contract">I read the contract and accept the conditions</label>
+    <a href="SampleContract-Shuttle.pdf" target="_blank">The Contract <input type="checkbox" id="contract" name="contract" required></a>
+
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+
+
+
+
+</body>
+</html>
